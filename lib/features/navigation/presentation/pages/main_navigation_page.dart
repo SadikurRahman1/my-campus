@@ -1,7 +1,6 @@
 
 import 'package:my_campus/core/exported_files/core_export.dart';
 import 'package:my_campus/features/navigation/presentation/widgets/bottom_nav_bar.dart';
-import '../controllers/navigation_controller.dart';
 
 class MainNavigationPage extends GetView<NavigationController> {
   const MainNavigationPage({super.key});
@@ -17,11 +16,11 @@ class MainNavigationPage extends GetView<NavigationController> {
           Text('Dashboard Page'),
           Text('Routine Page'),
           Text('Attendance Page'),
-          Text('Profile Page'),
+          // Text('Profile Page'),
           // DashboardPage(),
           // RoutinePage(),
           // AttendancePage(),
-          // ProfilePage(),
+          ProfilePage(),
         ],
       ),
       bottomNavigationBar: Obx(

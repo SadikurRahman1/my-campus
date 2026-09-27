@@ -31,7 +31,7 @@ class OnboardingController extends GetxController {
   }
 
   void _goToLogin() {
-    // Get.offNamed(AppRoutes.login);
+    Get.offAllNamed(AppRoutes.login);
   }
 
   @override

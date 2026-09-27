@@ -4,12 +4,21 @@ class SplashController extends GetxController {
   @override
   void onReady() {
     super.onReady();
+
+    print('SPLASH CONTROLLER READY');
+
     _initializeApp();
   }
 
   Future<void> _initializeApp() async {
+    print('SPLASH INIT');
+
     await Future.delayed(const Duration(seconds: 2));
 
-    Get.offNamed(AppRoutes.onboarding);
+    print('SPLASH TIMER DONE');
+
+    Get.offAllNamed(AppRoutes.onboarding);
+
+    print('NAVIGATION CALLED');
   }
 }

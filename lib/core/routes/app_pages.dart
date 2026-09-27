@@ -1,64 +1,56 @@
 import 'package:my_campus/core/exported_files/core_export.dart';
 
+
 class AppPages {
   AppPages._();
 
   static final List<GetPage<dynamic>> routes = [
-    _page(
+    GetPage(
       name: AppRoutes.splash,
-      page: const SplashPage(),
+      page: () => const SplashPage(),
       binding: SplashBinding(),
     ),
 
-    _page(
+    GetPage(
       name: AppRoutes.onboarding,
-      page: const OnboardingPage(),
+      page: () => const OnboardingPage(),
       binding: OnboardingBinding(),
     ),
 
-    _page(
+    GetPage(
       name: AppRoutes.login,
-      page: const LoginPage(),
+      page: () => const LoginPage(),
       binding: AuthBinding(),
     ),
 
-    _page(
+    GetPage(
       name: AppRoutes.registration,
-      page: const RegistrationPage(),
+      page: () => const RegistrationPage(),
       binding: AuthBinding(),
     ),
 
-    _page(
+    GetPage(
       name: AppRoutes.verification,
-      page: const VerificationPage(),
+      page: () => const VerificationPage(),
       binding: AuthBinding(),
     ),
-    _page(
+
+    GetPage(
       name: AppRoutes.forgotPassword,
-      page: const ForgotPasswordPage(),
+      page: () => const ForgotPasswordPage(),
       binding: AuthBinding(),
     ),
 
-    _page(
+    GetPage(
       name: AppRoutes.createNewPassword,
-      page: const CreateNewPasswordPage(),
+      page: () => const CreateNewPasswordPage(),
       binding: AuthBinding(),
     ),
 
-    _page(
+    GetPage(
       name: AppRoutes.main,
-      page: const MainNavigationPage(),
+      page: () => const MainNavigationPage(),
       binding: NavigationBinding(),
     ),
-
-    
   ];
-
-  static GetPage<dynamic> _page({
-    required String name,
-    required Widget page,
-    Bindings? binding,
-  }) {
-    return GetPage(name: name, page: () => page, binding: binding);
-  }
 }
