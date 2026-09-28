@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_campus/core/exported_files/core_export.dart';
 import 'package:my_campus/features/dashboard/data/models/dashboard_menu_model.dart';
 
 
@@ -31,7 +32,7 @@ class DashboardController extends GetxController {
       title: 'Assignments',
       subtitle: 'Your assignments',
       icon: 'assignment',
-      route: '',
+      route: AppRoutes.assignment,
     ),
     DashboardMenuModel(
       title: 'Notices',
@@ -51,19 +52,31 @@ class DashboardController extends GetxController {
     currentBannerIndex.value = index;
   }
 
-  String getGreeting() {
-  final hour = DateTime.now().hour;
+  void handleQuickActionTap(DashboardMenuModel item) {
+    if (item.route.isEmpty) {
+      return;
+    }
 
-  if (hour < 12) {
-    return 'Good Morning 👋';
-  } else if (hour < 17) {
-    return 'Good Afternoon ☀️';
-  } else if (hour < 21) {
-    return 'Good Evening 🌤️';
-  } else {
+    Get.toNamed(item.route);
+  }
+
+  String getGreeting() {
+    final hour = DateTime.now().hour;
+
+    if (hour < 12) {
+      return 'Good Morning 👋';
+    }
+
+    if (hour < 17) {
+      return 'Good Afternoon ☀️';
+    }
+
+    if (hour < 21) {
+      return 'Good Evening 🌤️';
+    }
+
     return 'Welcome Back 🌙';
   }
-}
 
   @override
   void onClose() {

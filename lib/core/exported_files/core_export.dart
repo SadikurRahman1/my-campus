@@ -38,6 +38,11 @@ export 'package:my_campus/features/dashboard/presentation/bindings/dashboard_bin
 export 'package:my_campus/features/dashboard/presentation/controllers/dashboard_controller.dart';
 export 'package:my_campus/features/dashboard/presentation/pages/dashboard_page.dart';
 
+// Assignment
+export 'package:my_campus/features/assignment/presentation/bindings/assignment_binding.dart';
+export 'package:my_campus/features/assignment/presentation/controllers/assignment_controller.dart';
+export 'package:my_campus/features/assignment/presentation/pages/assignment_page.dart';
+
 // Routine
 export 'package:my_campus/features/routine/presentation/bindings/routine_binding.dart';
 export 'package:my_campus/features/routine/presentation/controllers/routine_controller.dart';

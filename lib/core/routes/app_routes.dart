@@ -17,6 +17,9 @@ abstract class AppRoutes {
   // Dashboard
   static const dashboard = '/dashboard';
 
+  // Assignment
+  static const assignment = '/assignment';
+
   // Routine
   static const routine = '/routine';
 

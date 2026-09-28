@@ -125,7 +125,7 @@ class DashboardPage extends GetView<DashboardController> {
 
         return QuickActionCard(
           item: item,
-          onTap: () {},
+          onTap: () => controller.handleQuickActionTap(item),
         );
       },
     );

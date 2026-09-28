@@ -59,6 +59,12 @@ class AppPages {
     ),
 
     GetPage(
+      name: AppRoutes.assignment,
+      page: () => const AssignmentPage(),
+      binding: AssignmentBinding(),
+    ),
+
+    GetPage(
       name: AppRoutes.routine,
       page: () => const RoutinePage(),
       binding: RoutineBinding(),
