@@ -44,8 +44,8 @@ class DashboardBanner extends GetView<DashboardController> {
                 decoration: BoxDecoration(
                   gradient: const LinearGradient(
                     colors: [
-                      AppColors.dashboardBannerStart,
-                      AppColors.dashboardBannerEnd,
+                      AppColors.primary,
+                      AppColors.secondary,
                     ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
@@ -112,8 +112,8 @@ class DashboardBanner extends GetView<DashboardController> {
                   width: isActive ? 20 : 6,
                   decoration: BoxDecoration(
                     color: isActive
-                        ? AppColors.dashboardAccent
-                        : AppColors.dashboardOutline,
+                        ? AppColors.secondary
+                        : AppColors.border,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 );

@@ -21,10 +21,10 @@ class NoticeCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: AppColors.dashboardSurface,
+        color: AppColors.surfaceVariant,
         borderRadius: BorderRadius.circular(18),
         border: Border.all(
-          color: AppColors.dashboardOutline,
+          color: AppColors.border,
         ),
       ),
       child: Row(
@@ -34,12 +34,12 @@ class NoticeCard extends StatelessWidget {
             height: 44,
             width: 44,
             decoration: BoxDecoration(
-              color: AppColors.dashboardSurfaceAlt,
+              color: AppColors.primarySoft,
               borderRadius: BorderRadius.circular(12),
             ),
             child: Icon(
               Icons.campaign_rounded,
-              color: AppColors.dashboardAccent,
+              color: AppColors.secondary,
             ),
           ),
 
@@ -72,7 +72,7 @@ class NoticeCard extends StatelessWidget {
                 Text(
                   date,
                   style: theme.textTheme.labelSmall?.copyWith(
-                    color: AppColors.dashboardAccent,
+                    color: AppColors.secondary,
                     fontWeight: FontWeight.w600,
                   ),
                 ),

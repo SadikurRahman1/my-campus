@@ -135,8 +135,8 @@ class _HeaderCard extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            colorScheme.primary,
-            colorScheme.primaryContainer,
+            AppColors.primary,
+            AppColors.secondary,
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,

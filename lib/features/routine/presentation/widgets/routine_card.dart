@@ -19,10 +19,10 @@ class RoutineCard extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: AppColors.dashboardSurface,
+        color: AppColors.surfaceVariant,
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: AppColors.dashboardOutline,
+          color: AppColors.border,
         ),
       ),
       child: Column(
@@ -33,12 +33,12 @@ class RoutineCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: AppColors.dashboardSurfaceAlt,
+                  color: AppColors.primarySoft,
                   borderRadius: BorderRadius.circular(14),
                 ),
                 child: Icon(
                   Icons.schedule,
-                  color: AppColors.dashboardAccent,
+                  color: AppColors.secondary,
                 ),
               ),
               const SizedBox(width: 12),

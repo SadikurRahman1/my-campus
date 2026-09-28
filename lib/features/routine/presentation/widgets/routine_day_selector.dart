@@ -27,14 +27,14 @@ class RoutineDaySelector extends StatelessWidget {
           return ChoiceChip(
             label: Text(days[index]),
             selected: isSelected,
-            selectedColor: AppColors.dashboardSurfaceAlt,
+            selectedColor: AppColors.primarySoft,
             backgroundColor: AppColors.surface,
             labelStyle: Theme.of(context).textTheme.labelMedium?.copyWith(
-                  color: isSelected ? AppColors.dashboardAccent : AppColors.textSecondary,
+                  color: isSelected ? AppColors.secondary : AppColors.textSecondary,
                   fontWeight: FontWeight.w600,
                 ),
             side: BorderSide(
-              color: isSelected ? AppColors.dashboardAccent : AppColors.border,
+              color: isSelected ? AppColors.secondary : AppColors.border,
             ),
             onSelected: (_) => onDaySelected(index),
           );

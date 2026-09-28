@@ -23,10 +23,10 @@ class UpcomingEventCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: AppColors.dashboardSurface,
+        color: AppColors.surfaceVariant,
         borderRadius: BorderRadius.circular(18),
         border: Border.all(
-          color: AppColors.dashboardOutline,
+          color: AppColors.border,
         ),
       ),
       child: Row(
@@ -35,7 +35,7 @@ class UpcomingEventCard extends StatelessWidget {
             height: 58,
             width: 58,
             decoration: BoxDecoration(
-              color: AppColors.dashboardAccent,
+              color: AppColors.secondary,
               borderRadius: BorderRadius.circular(14),
             ),
             child: Column(

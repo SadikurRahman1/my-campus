@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:my_campus/core/constants/app_colors.dart';
+
 class OnboardingIndicator extends StatelessWidget {
   final int count;
   final int currentIndex;
@@ -12,8 +14,6 @@ class OnboardingIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: List.generate(
@@ -28,8 +28,8 @@ class OnboardingIndicator extends StatelessWidget {
             width: isActive ? 24 : 8,
             decoration: BoxDecoration(
               color: isActive
-                  ? colorScheme.primary
-                  : colorScheme.outlineVariant,
+                  ? AppColors.primary
+                  : AppColors.border,
               borderRadius: BorderRadius.circular(20),
             ),
           );

@@ -8,6 +8,7 @@ class AppColors {
   static const Color primary = Color(0xFF1D4ED8);
   static const Color secondary = Color(0xFF14B8A6);
   static const Color tertiary = Color(0xFF8B5CF6);
+  static const Color primarySoft = Color(0xFFE0F2FE);
 
   // Status
   static const Color success = Color(0xFF10B981);
@@ -17,16 +18,11 @@ class AppColors {
   static const Color attendancePresent = Color(0xFF1B8F5A);
   static const Color attendanceLate = Color(0xFFE08A00);
   static const Color attendanceAbsent = Color(0xFFCC4B37);
-  static const Color dashboardBannerStart = Color(0xFF1D4ED8);
-  static const Color dashboardBannerEnd = Color(0xFF14B8A6);
-  static const Color dashboardSurface = Color(0xFFF7FAFC);
-  static const Color dashboardSurfaceAlt = Color(0xFFE0F2FE);
-  static const Color dashboardOutline = Color(0xFFDCE7F3);
-  static const Color dashboardAccent = Color(0xFF0F766E);
 
   // Background & Surface
   static const Color background = Color(0xFFF4F7FB);
   static const Color surface = Colors.white;
+  static const Color surfaceVariant = Color(0xFFF7FAFC);
 
   // Text
   static const Color textPrimary = Color(0xFF0F172A);

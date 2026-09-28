@@ -23,13 +23,27 @@ class OnboardingItem extends StatelessWidget {
             height: 180,
             width: 180,
             decoration: BoxDecoration(
-              color: theme.colorScheme.primary.withValues(alpha: 0.08),
+              gradient: const LinearGradient(
+                colors: [
+                  AppColors.primary,
+                  AppColors.secondary,
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
               shape: BoxShape.circle,
             ),
-            child: Icon(
-              data.icon,
-              size: 90,
-              color: theme.colorScheme.primary,
+            child: Container(
+              margin: const EdgeInsets.all(18),
+              decoration: BoxDecoration(
+                color: AppColors.white.withValues(alpha: 0.16),
+                shape: BoxShape.circle,
+            ),
+              child: Icon(
+                data.icon,
+                size: 90,
+                color: AppColors.white,
+              ),
             ),
           ),
 
@@ -41,6 +55,7 @@ class OnboardingItem extends StatelessWidget {
             textAlign: TextAlign.center,
             style: theme.textTheme.headlineSmall?.copyWith(
               fontWeight: FontWeight.bold,
+              color: AppColors.textPrimary,
             ),
           ),
 
@@ -52,7 +67,7 @@ class OnboardingItem extends StatelessWidget {
             textAlign: TextAlign.center,
             style: theme.textTheme.bodyLarge?.copyWith(
               height: 1.5,
-              color: theme.colorScheme.onSurfaceVariant,
+              color: AppColors.textSecondary,
             ),
           ),
         ],

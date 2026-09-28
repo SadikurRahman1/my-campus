@@ -10,6 +10,7 @@ class OnboardingPage extends GetView<OnboardingController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.background,
       body: SafeArea(
         child: Column(
           children: [
@@ -18,7 +19,12 @@ class OnboardingPage extends GetView<OnboardingController> {
               alignment: Alignment.centerRight,
               child: TextButton(
                 onPressed: controller.skip,
-                child: const Text('Skip'),
+                child: const Text(
+                  'Skip',
+                  style: TextStyle(
+                    color: AppColors.secondary,
+                  ),
+                ),
               ),
             ),
 

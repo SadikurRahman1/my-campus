@@ -21,11 +21,11 @@ class ProfileHeader extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 48,
-          backgroundColor: AppColors.dashboardSurfaceAlt,
+          backgroundColor: AppColors.primarySoft,
           child: Icon(
             Icons.person_rounded,
             size: 52,
-            color: AppColors.dashboardAccent,
+            color: AppColors.secondary,
           ),
         ),
         const SizedBox(height: 16),

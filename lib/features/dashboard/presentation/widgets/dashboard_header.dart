@@ -11,10 +11,10 @@ class DashboardHeader extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 26,
-          backgroundColor: AppColors.dashboardSurfaceAlt,
+          backgroundColor: AppColors.primarySoft,
           child: Icon(
             Icons.person_rounded,
-            color: AppColors.dashboardAccent,
+            color: AppColors.secondary,
           ),
         ),
 
@@ -43,7 +43,7 @@ class DashboardHeader extends StatelessWidget {
           onPressed: () {},
           icon: const Icon(
             Icons.notifications_none_rounded,
-            color: AppColors.dashboardAccent,
+            color: AppColors.secondary,
           ),
         ),
       ],

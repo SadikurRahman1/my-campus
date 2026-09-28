@@ -43,10 +43,10 @@ class QuickActionCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: AppColors.dashboardSurface,
+          color: AppColors.surfaceVariant,
           borderRadius: BorderRadius.circular(18),
           border: Border.all(
-            color: AppColors.dashboardOutline,
+            color: AppColors.border,
           ),
         ),
         child: Row(
@@ -55,12 +55,12 @@ class QuickActionCard extends StatelessWidget {
               height: 42,
               width: 42,
               decoration: BoxDecoration(
-                color: AppColors.dashboardSurfaceAlt,
+                color: AppColors.primarySoft,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Icon(
                 _getIcon(),
-                color: AppColors.dashboardAccent,
+                color: AppColors.secondary,
               ),
             ),
 
