@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_campus/core/constants/app_colors.dart';
 
 import '../../data/models/attendance_model.dart';
 import '../controllers/attendance_controller.dart';
@@ -148,12 +149,12 @@ class _HeaderCard extends StatelessWidget {
             height: 64,
             width: 64,
             decoration: BoxDecoration(
-              color: Colors.white.withValues(alpha: 0.18),
+              color: AppColors.white.withValues(alpha: 0.18),
               borderRadius: BorderRadius.circular(20),
             ),
             child: const Icon(
               Icons.fact_check_outlined,
-              color: Colors.white,
+              color: AppColors.white,
               size: 32,
             ),
           ),
@@ -165,7 +166,7 @@ class _HeaderCard extends StatelessWidget {
                 Text(
                   'Daily Attendance',
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                        color: Colors.white,
+                        color: AppColors.white,
                         fontWeight: FontWeight.w800,
                       ),
                 ),
@@ -173,7 +174,7 @@ class _HeaderCard extends StatelessWidget {
                 Text(
                   'Track presence, late entries, and absences for today.',
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Colors.white.withValues(alpha: 0.9),
+                        color: AppColors.white.withValues(alpha: 0.9),
                       ),
                 ),
               ],
@@ -224,9 +225,9 @@ class _AttendanceTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final statusColor = switch (record.status) {
-      AttendanceStatus.present => const Color(0xFF1B8F5A),
-      AttendanceStatus.late => const Color(0xFFE08A00),
-      AttendanceStatus.absent => const Color(0xFFCC4B37),
+      AttendanceStatus.present => AppColors.attendancePresent,
+      AttendanceStatus.late => AppColors.attendanceLate,
+      AttendanceStatus.absent => AppColors.attendanceAbsent,
     };
 
     final statusLabel = switch (record.status) {

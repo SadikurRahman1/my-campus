@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:my_campus/core/constants/app_colors.dart';
+
 class UpcomingEventCard extends StatelessWidget {
   final String title;
   final String date;
@@ -21,10 +23,10 @@ class UpcomingEventCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: theme.colorScheme.surface,
+        color: AppColors.dashboardSurface,
         borderRadius: BorderRadius.circular(18),
         border: Border.all(
-          color: theme.colorScheme.outlineVariant,
+          color: AppColors.dashboardOutline,
         ),
       ),
       child: Row(
@@ -33,7 +35,7 @@ class UpcomingEventCard extends StatelessWidget {
             height: 58,
             width: 58,
             decoration: BoxDecoration(
-              color: theme.colorScheme.primary,
+              color: AppColors.dashboardAccent,
               borderRadius: BorderRadius.circular(14),
             ),
             child: Column(
@@ -42,14 +44,14 @@ class UpcomingEventCard extends StatelessWidget {
                 Text(
                   date.split(' ').first,
                   style: theme.textTheme.titleMedium?.copyWith(
-                    color: Colors.white,
+                    color: AppColors.white,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 Text(
                   date.split(' ').last,
                   style: theme.textTheme.labelSmall?.copyWith(
-                    color: Colors.white,
+                    color: AppColors.white,
                   ),
                 ),
               ],

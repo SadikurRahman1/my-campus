@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_campus/core/constants/app_colors.dart';
 
 class ProfileHeader extends StatelessWidget {
   final String name;
@@ -20,11 +21,11 @@ class ProfileHeader extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 48,
-          backgroundColor: theme.colorScheme.primaryContainer,
+          backgroundColor: AppColors.dashboardSurfaceAlt,
           child: Icon(
             Icons.person_rounded,
             size: 52,
-            color: theme.colorScheme.primary,
+            color: AppColors.dashboardAccent,
           ),
         ),
         const SizedBox(height: 16),

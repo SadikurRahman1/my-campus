@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:my_campus/core/constants/app_colors.dart';
+
 import '../../data/models/dashboard_menu_model.dart';
 
 class QuickActionCard extends StatelessWidget {
@@ -41,10 +43,10 @@ class QuickActionCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: theme.colorScheme.surface,
+          color: AppColors.dashboardSurface,
           borderRadius: BorderRadius.circular(18),
           border: Border.all(
-            color: theme.colorScheme.outlineVariant,
+            color: AppColors.dashboardOutline,
           ),
         ),
         child: Row(
@@ -53,12 +55,12 @@ class QuickActionCard extends StatelessWidget {
               height: 42,
               width: 42,
               decoration: BoxDecoration(
-                color: theme.colorScheme.primaryContainer,
+                color: AppColors.dashboardSurfaceAlt,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Icon(
                 _getIcon(),
-                color: theme.colorScheme.primary,
+                color: AppColors.dashboardAccent,
               ),
             ),
 

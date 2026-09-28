@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_campus/core/constants/app_colors.dart';
 
 import '../../data/models/routine_model.dart';
 
@@ -18,10 +19,10 @@ class RoutineCard extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: colorScheme.surface,
+        color: AppColors.dashboardSurface,
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: colorScheme.outlineVariant.withValues(alpha: 0.5),
+          color: AppColors.dashboardOutline,
         ),
       ),
       child: Column(
@@ -32,12 +33,12 @@ class RoutineCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: colorScheme.primary.withValues(alpha: 0.12),
+                  color: AppColors.dashboardSurfaceAlt,
                   borderRadius: BorderRadius.circular(14),
                 ),
                 child: Icon(
                   Icons.schedule,
-                  color: colorScheme.primary,
+                  color: AppColors.dashboardAccent,
                 ),
               ),
               const SizedBox(width: 12),

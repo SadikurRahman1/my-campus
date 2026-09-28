@@ -12,6 +12,20 @@ class ProfileController extends GetxController {
   }
 
   void logout() {
-    Get.offAllNamed(AppRoutes.login);
+    Get.dialog(
+      AppConfirmationDialog(
+        title: 'Logout?',
+        message: 'Are you sure you want to log out from your account?',
+        confirmText: 'Logout',
+        cancelText: 'Cancel',
+        icon: Icons.logout_rounded,
+        accentColor: AppColors.error,
+        onCancel: Get.back,
+        onConfirm: () {
+          Get.back();
+          Get.offAllNamed(AppRoutes.login);
+        },
+      ),
+    );
   }
 }

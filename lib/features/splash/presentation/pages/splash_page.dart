@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_campus/core/constants/app_colors.dart';
 
 import '../controllers/splash_controller.dart';
 
@@ -11,6 +12,7 @@ class SplashPage extends GetView<SplashController> {
     Get.find<SplashController>();
 
     return Scaffold(
+      backgroundColor: AppColors.background,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -19,13 +21,20 @@ class SplashPage extends GetView<SplashController> {
               height: 90,
               width: 90,
               decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.primary,
+                gradient: const LinearGradient(
+                  colors: [
+                    AppColors.primary,
+                    AppColors.secondary,
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
                 borderRadius: BorderRadius.circular(24),
               ),
               child: const Icon(
                 Icons.school_rounded,
                 size: 48,
-                color: Colors.white,
+                color: AppColors.white,
               ),
             ),
 
@@ -44,7 +53,7 @@ class SplashPage extends GetView<SplashController> {
               'Your campus, connected.',
               style: Theme.of(
                 context,
-              ).textTheme.bodyMedium?.copyWith(color: Colors.grey),
+              ).textTheme.bodyMedium?.copyWith(color: AppColors.textSecondary),
             ),
 
             const SizedBox(height: 40),
@@ -52,7 +61,10 @@ class SplashPage extends GetView<SplashController> {
             const SizedBox(
               height: 24,
               width: 24,
-              child: CircularProgressIndicator(strokeWidth: 2.5),
+              child: CircularProgressIndicator(
+                strokeWidth: 2.5,
+                valueColor: AlwaysStoppedAnimation<Color>(AppColors.primary),
+              ),
             ),
           ],
         ),

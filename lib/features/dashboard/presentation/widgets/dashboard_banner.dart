@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'package:my_campus/core/constants/app_colors.dart';
+
 import '../controllers/dashboard_controller.dart';
 
 class DashboardBanner extends GetView<DashboardController> {
@@ -40,7 +42,14 @@ class DashboardBanner extends GetView<DashboardController> {
               return Container(
                 padding: const EdgeInsets.all(24),
                 decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.primary,
+                  gradient: const LinearGradient(
+                    colors: [
+                      AppColors.dashboardBannerStart,
+                      AppColors.dashboardBannerEnd,
+                    ],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
                   borderRadius: BorderRadius.circular(24),
                 ),
                 child: Row(
@@ -56,7 +65,7 @@ class DashboardBanner extends GetView<DashboardController> {
                                 .textTheme
                                 .headlineSmall
                                 ?.copyWith(
-                                  color: Colors.white,
+                                  color: AppColors.white,
                                   fontWeight: FontWeight.bold,
                                 ),
                           ),
@@ -67,7 +76,7 @@ class DashboardBanner extends GetView<DashboardController> {
                                 .textTheme
                                 .bodyMedium
                                 ?.copyWith(
-                                  color: Colors.white70,
+                                  color: AppColors.white.withValues(alpha: 0.78),
                                 ),
                           ),
                         ],
@@ -76,7 +85,7 @@ class DashboardBanner extends GetView<DashboardController> {
                     Icon(
                       banner.icon,
                       size: 60,
-                      color: Colors.white.withValues(alpha: 0.9),
+                        color: AppColors.white.withValues(alpha: 0.9),
                     ),
                   ],
                 ),
@@ -103,10 +112,8 @@ class DashboardBanner extends GetView<DashboardController> {
                   width: isActive ? 20 : 6,
                   decoration: BoxDecoration(
                     color: isActive
-                        ? Theme.of(context).colorScheme.primary
-                        : Theme.of(context)
-                            .colorScheme
-                            .outlineVariant,
+                        ? AppColors.dashboardAccent
+                        : AppColors.dashboardOutline,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 );

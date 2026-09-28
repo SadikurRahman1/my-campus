@@ -10,6 +10,11 @@ class AppTheme {
     colorScheme: ColorScheme.fromSeed(
       seedColor: AppColors.primary,
       brightness: Brightness.light,
+      primary: AppColors.primary,
+      secondary: AppColors.secondary,
+      tertiary: AppColors.tertiary,
+      surface: AppColors.surface,
+      background: AppColors.background,
     ),
 
     scaffoldBackgroundColor: AppColors.background,
@@ -50,6 +55,8 @@ class AppTheme {
 
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.primary,
+        foregroundColor: AppColors.white,
         minimumSize: const Size(double.infinity, 54),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(14),

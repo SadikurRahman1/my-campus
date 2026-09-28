@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:my_campus/core/constants/app_colors.dart';
+
 class DashboardHeader extends StatelessWidget {
   const DashboardHeader({super.key});
 
@@ -9,11 +11,10 @@ class DashboardHeader extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 26,
-          backgroundColor:
-              Theme.of(context).colorScheme.primaryContainer,
+          backgroundColor: AppColors.dashboardSurfaceAlt,
           child: Icon(
             Icons.person_rounded,
-            color: Theme.of(context).colorScheme.primary,
+            color: AppColors.dashboardAccent,
           ),
         ),
 
@@ -42,6 +43,7 @@ class DashboardHeader extends StatelessWidget {
           onPressed: () {},
           icon: const Icon(
             Icons.notifications_none_rounded,
+            color: AppColors.dashboardAccent,
           ),
         ),
       ],

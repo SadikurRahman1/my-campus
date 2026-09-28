@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_campus/core/constants/app_colors.dart';
 
 import '../../data/models/attendance_model.dart';
 import 'attendance_progress.dart';
@@ -18,8 +19,8 @@ class AttendanceSubjectCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    final borderColor = selected ? colorScheme.primary : colorScheme.outlineVariant.withValues(alpha: 0.5);
-    final surfaceColor = selected ? colorScheme.primary.withValues(alpha: 0.06) : colorScheme.surface;
+    final borderColor = selected ? AppColors.primary : colorScheme.outlineVariant.withValues(alpha: 0.5);
+    final surfaceColor = selected ? AppColors.primary.withValues(alpha: 0.06) : colorScheme.surface;
 
     return InkWell(
       onTap: onTap,
@@ -49,7 +50,7 @@ class AttendanceSubjectCard extends StatelessWidget {
                   Icon(
                     Icons.check_circle,
                     size: 18,
-                    color: colorScheme.primary,
+                    color: AppColors.primary,
                   ),
               ],
             ),

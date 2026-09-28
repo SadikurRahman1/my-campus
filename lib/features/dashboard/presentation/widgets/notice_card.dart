@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:my_campus/core/constants/app_colors.dart';
+
 class NoticeCard extends StatelessWidget {
   final String title;
   final String description;
@@ -19,10 +21,10 @@ class NoticeCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: theme.colorScheme.surface,
+        color: AppColors.dashboardSurface,
         borderRadius: BorderRadius.circular(18),
         border: Border.all(
-          color: theme.colorScheme.outlineVariant,
+          color: AppColors.dashboardOutline,
         ),
       ),
       child: Row(
@@ -32,12 +34,12 @@ class NoticeCard extends StatelessWidget {
             height: 44,
             width: 44,
             decoration: BoxDecoration(
-              color: theme.colorScheme.primaryContainer,
+              color: AppColors.dashboardSurfaceAlt,
               borderRadius: BorderRadius.circular(12),
             ),
             child: Icon(
               Icons.campaign_rounded,
-              color: theme.colorScheme.primary,
+              color: AppColors.dashboardAccent,
             ),
           ),
 
@@ -70,7 +72,7 @@ class NoticeCard extends StatelessWidget {
                 Text(
                   date,
                   style: theme.textTheme.labelSmall?.copyWith(
-                    color: theme.colorScheme.primary,
+                    color: AppColors.dashboardAccent,
                     fontWeight: FontWeight.w600,
                   ),
                 ),

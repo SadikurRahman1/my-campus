@@ -88,7 +88,7 @@ class ProfilePage extends GetView<ProfileController> {
               ProfileMenuTile(
                 icon: Icons.logout_rounded,
                 title: 'Logout',
-                iconColor: Colors.red,
+                iconColor: AppColors.error,
                 onTap: controller.logout,
               ),
 

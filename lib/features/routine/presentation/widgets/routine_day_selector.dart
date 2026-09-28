@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_campus/core/constants/app_colors.dart';
 
 class RoutineDaySelector extends StatelessWidget {
   final List<String> days;
@@ -26,6 +27,15 @@ class RoutineDaySelector extends StatelessWidget {
           return ChoiceChip(
             label: Text(days[index]),
             selected: isSelected,
+            selectedColor: AppColors.dashboardSurfaceAlt,
+            backgroundColor: AppColors.surface,
+            labelStyle: Theme.of(context).textTheme.labelMedium?.copyWith(
+                  color: isSelected ? AppColors.dashboardAccent : AppColors.textSecondary,
+                  fontWeight: FontWeight.w600,
+                ),
+            side: BorderSide(
+              color: isSelected ? AppColors.dashboardAccent : AppColors.border,
+            ),
             onSelected: (_) => onDaySelected(index),
           );
         },

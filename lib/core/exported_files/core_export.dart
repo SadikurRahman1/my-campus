@@ -7,6 +7,7 @@ export 'package:get/get_navigation/src/routes/get_route.dart';
 export 'package:my_campus/core/constants/app_colors.dart';
 export 'package:my_campus/core/theme/app_text_styles.dart';
 export 'package:my_campus/core/widgets/app_snackbar.dart';
+export 'package:my_campus/core/widgets/app_confirmation_dialog.dart';
 export 'package:my_campus/core/routes/app_routes.dart';
 
 

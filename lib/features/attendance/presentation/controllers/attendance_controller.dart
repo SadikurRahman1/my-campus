@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_campus/core/constants/app_colors.dart';
 
 import '../../data/models/attendance_model.dart';
 
@@ -12,21 +13,21 @@ class AttendanceController extends GetxController {
       value: '42',
       caption: 'Students checked in',
       icon: Icons.check_circle_outline,
-      accentColor: Color(0xFF1B8F5A),
+      accentColor: AppColors.attendancePresent,
     ),
     AttendanceSummaryModel(
       title: 'Late',
       value: '3',
       caption: 'Arrived after time',
       icon: Icons.schedule_outlined,
-      accentColor: Color(0xFFE08A00),
+      accentColor: AppColors.attendanceLate,
     ),
     AttendanceSummaryModel(
       title: 'Absent',
       value: '5',
       caption: 'Not marked present',
       icon: Icons.highlight_off_outlined,
-      accentColor: Color(0xFFCC4B37),
+      accentColor: AppColors.attendanceAbsent,
     ),
   ];
 
