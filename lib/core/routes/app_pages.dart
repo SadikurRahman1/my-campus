@@ -1,6 +1,5 @@
 import 'package:my_campus/core/exported_files/core_export.dart';
 
-
 class AppPages {
   AppPages._();
 
@@ -51,6 +50,24 @@ class AppPages {
       name: AppRoutes.main,
       page: () => const MainNavigationPage(),
       binding: NavigationBinding(),
+    ),
+
+    GetPage(
+      name: AppRoutes.dashboard,
+      page: () => const DashboardPage(),
+      binding: DashboardBinding(),
+    ),
+
+    GetPage(
+      name: AppRoutes.routine,
+      page: () => const RoutinePage(),
+      binding: RoutineBinding(),
+    ),
+
+    GetPage(
+      name: AppRoutes.attendance,
+      page: () => const AttendancePage(),
+      binding: AttendanceBinding(),
     ),
   ];
 }

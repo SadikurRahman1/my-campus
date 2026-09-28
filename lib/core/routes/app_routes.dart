@@ -13,4 +13,13 @@ abstract class AppRoutes {
 
   // Main
   static const main = '/main';
+
+  // Dashboard
+  static const dashboard = '/dashboard';
+
+  // Routine
+  static const routine = '/routine';
+
+  // Attendance
+  static const attendance = '/attendance';
 }

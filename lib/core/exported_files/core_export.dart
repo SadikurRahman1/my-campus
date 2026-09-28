@@ -32,7 +32,23 @@ export 'package:my_campus/features/navigation/presentation/bindings/navigation_b
 export 'package:my_campus/features/navigation/presentation/pages/main_navigation_page.dart';
 export 'package:my_campus/features/navigation/presentation/controllers/navigation_controller.dart';
 
+// Dashboard
+export 'package:my_campus/features/dashboard/presentation/bindings/dashboard_binding.dart';
+export 'package:my_campus/features/dashboard/presentation/controllers/dashboard_controller.dart';
+export 'package:my_campus/features/dashboard/presentation/pages/dashboard_page.dart';
+
+// Routine
+export 'package:my_campus/features/routine/presentation/bindings/routine_binding.dart';
+export 'package:my_campus/features/routine/presentation/controllers/routine_controller.dart';
+export 'package:my_campus/features/routine/presentation/pages/routine_page.dart';
+
+// Attendance
+export 'package:my_campus/features/attendance/presentation/bindings/attendance_binding.dart';
+export 'package:my_campus/features/attendance/presentation/controllers/attendance_controller.dart';
+export 'package:my_campus/features/attendance/presentation/pages/attendance_page.dart';
+
 // Profile
 export 'package:my_campus/features/profile/presentation/bindings/profile_binding.dart';
 export 'package:my_campus/features/profile/presentation/controllers/profile_controller.dart';
 export 'package:my_campus/features/profile/presentation/pages/profile_page.dart';
+
