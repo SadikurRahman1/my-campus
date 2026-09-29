@@ -253,6 +253,8 @@ Main Navigation
    │
    ├── Attendance
    │
+   ├── Assignments
+   │
    ├── Notices
    │
    └── Profile
