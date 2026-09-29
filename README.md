@@ -66,6 +66,15 @@ The main goal of this project is to demonstrate:
 * Semester selection
 * Visual attendance progress
 
+### 📝 Assignments
+
+* View assigned tasks
+* Assignment title and description
+* Course/subject information
+* Submission deadline
+* Assignment status
+* Upcoming and completed assignments
+
 ### 👤 Profile
 
 * Student information
